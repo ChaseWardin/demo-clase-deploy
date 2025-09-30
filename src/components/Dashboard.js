@@ -163,6 +163,7 @@ export class Dashboard {
     try {
       // Load dashboard summary
       const dashboardData = await reportsAPI.getDashboardSummary()
+      
       this.updateStats(dashboardData)
 
       // Load products

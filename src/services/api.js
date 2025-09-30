@@ -91,6 +91,8 @@ export const reportsAPI = {
     const response = await api.get(API_CONFIG.ENDPOINTS.INVENTORY_REPORT)
     return response.data
   }
+
+  
 }
 
 export default api

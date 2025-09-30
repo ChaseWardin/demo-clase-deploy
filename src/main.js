@@ -8,7 +8,6 @@ class App {
     this.app = document.getElementById('app')
     this.login = new Login()
     this.dashboard = new Dashboard()
-    
     this.init()
   }
 
