@@ -6,7 +6,14 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    open: true
+    open: true,
+    https: false, // fuerza HTTP en dev
+    proxy: {
+      '/api': {
+        target: 'http://localhost:4000', // tu backend
+        changeOrigin: true,
+      }
+    }
   },
   build: {
     outDir: 'dist',
