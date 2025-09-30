@@ -10,7 +10,7 @@ export default defineConfig({
     https: false, // fuerza HTTP en dev
     proxy: {
       '/api': {
-        target: 'http://localhost:4000', // tu backend
+        target: 'http://185.218.124.154:8800/api',
         changeOrigin: true,
       }
     }
